@@ -11,6 +11,8 @@ Altought there are exactly the same number of burned and unburned polygons, they
 
 - LANDSAT8_burned_unburned_reference_ValleNuevo.tif corresponds to burned and unburned areas identified by photointerpretation on the Valle Nuevo protected area during summer 2014 on LandSat-8 imagery. This is a reference data used to evaluate the Overall Accuracy, Omission and Comission errors on the developped script outputs tested with different values for indexes and ratio.
 
-- Burned_area_count_per_pixel.zip contains 9 tif files (one per protected area). Each files has one band containing the number of times a pixel has been detected as burned for the 2000-2020 period (from 1 to 4).
+- Burned_areas_indices_values_and_dates.zip contains 9 tiff files (one per protected area). Each file has 120 bands: band 1 contains a dNBR value, band 2 the RdNBR value, band 3 the NDVI-difference value, band 4 the prefire date and band 5 the postfire date of the first time a burned area has been detected for each pixel. Band 6 is empty and bands 7 to 11 contains the dNBR/RdNBR/NDVI-difference/prefire date/postfire date of the second time a burned area has been detected for the same pixel. This structure goes on with bands 13 to 17 (third event) and 19 to 23 (fourth event).
+
+- Burned_area_count_per_pixel.zip contains 9 tiff files (one per protected area). Each file has one band containing the number of times a pixel has been detected as burned for the 2000-2020 period (from 1 to 4).
 
 
