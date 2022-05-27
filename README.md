@@ -1,4 +1,4 @@
-# burned_areas_data
+# burned_areas_reference_data_and_results
 Data used for the burned areas analysis made on the Dominican Republic on 2000-2020 MODIS images.
 
 - burned_areas_reference_MODIS_2000_2020_DominicanRepublic.shp corresponds to burned areas polygons on pine and tropical humid forests detected on MODIS imagery in period 2000-2020 by photointerpretation combined to VIIRS hotspots visualization. Photointerpretation of MODIS imagery has been made with 721 band combination (SWIR3/NIR/Red). The shapefile contains the date of a MODIS image previous to the event (img_inicio field) and following the event (img_final field); it also contains a rough estimation of confidence in the photointerpretation in percent, as estimated by the photointerpreter (conf field).
@@ -10,5 +10,7 @@ Here is description of each fields: POLYGON_BURNED: reference number of burned a
 Altought there are exactly the same number of burned and unburned polygons, they do not cover the same areas; nevertheless, they do cover the same dates (for before and after fields).
 
 - LANDSAT8_burned_unburned_reference_ValleNuevo.tif corresponds to burned and unburned areas identified by photointerpretation on the Valle Nuevo protected area during summer 2014 on LandSat-8 imagery. This is a reference data used to evaluate the Overall Accuracy, Omission and Comission errors on the developped script outputs tested with different values for indexes and ratio.
+
+- Burned_area_count_per_pixel.zip contains 9 tif files (one per protected area). Each files has one band containing the number of times a pixel has been detected as burned for the 2000-2020 period (from 1 to 4).
 
 
